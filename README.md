@@ -1,6 +1,6 @@
-# 🚀 LocalRAG — RAG Pipeline for Customer Service on local Hardware
+# 🚀 LocalRAG - RAG Pipeline for Customer Service on local Hardware
 
-Welcome to _LocalRAG_ — a focused, fast, and modular Retrieval-Augmented Generation (RAG) pipeline built around manual documentation and a curated expert dataset. This repository contains everything you need to preprocess manuals, build datasets (including synthetic LLM-generated examples), experiment with embeddings and rerankers, evaluate RAG systems, and run a local prototype chat interface.
+Welcome to _LocalRAG_, a focused, fast, and modular Retrieval-Augmented Generation (RAG) pipeline built around manual documentation and a curated expert dataset. This repository contains everything you need to preprocess manuals, build datasets (including synthetic LLM-generated examples), experiment with embeddings and rerankers, evaluate RAG systems, and run a local prototype chat interface.
 
 ✨ Why this repo is exciting
 - ⚡ Fast experiments: small, reproducible preprocessing and dataset generation pipelines.
@@ -8,11 +8,11 @@ Welcome to _LocalRAG_ — a focused, fast, and modular Retrieval-Augmented Gener
 - 🧪 Prototype-ready: a local chatbot prototype (Docker-friendly) to demo the system and run user studies.
 
 ⚙️ Repository layout
-- `1_preproc/` — Preprocessing: HTML/manual parsing and chunking for retrieval.
-- `2_datasets/` — Datasets: expert dataset, synthetic LLM datasets (train/test), and generation scripts.
-- `3_retrieval/` — Retrieval experiments: embedding comparisons, lightweight fine-tuning, and advanced retrieval techniques.
-- `4_RAG/` — RAG evaluation: system evaluation scripts and experiment notebooks using the expert dataset.
-- `5_prototype/` — Prototype: Dockerfile, `LLM.py`, and a Streamlit demo (`streamlit.py`) to run a local chatbot interface.
+- `1_preproc/` - Preprocessing: HTML/manual parsing and chunking for retrieval.
+- `2_datasets/` - Datasets: expert dataset, synthetic LLM datasets (train/test), and generation scripts.
+- `3_retrieval/` - Retrieval experiments: embedding comparisons, lightweight fine-tuning, and advanced retrieval techniques.
+- `4_RAG/` - RAG evaluation: system evaluation scripts and experiment notebooks using the expert dataset.
+- `5_prototype/` - Prototype: Dockerfile, `LLM.py`, and a Streamlit demo (`streamlit.py`) to run a local chatbot interface.
 
 🛠️ Project pipeline (high level)
 1. 🧩 Convert manual HTML pages into retrieval-friendly text chunks (`1_preproc/`).
@@ -22,8 +22,8 @@ Welcome to _LocalRAG_ — a focused, fast, and modular Retrieval-Augmented Gener
 5. 💬 Build a local prototype with a simple chat interface and test it on a workstation or inside Docker (`5_prototype/`).
 
 💡 Notes & practical tips
-- The `multilingual-e5-small` embedding model is fast and resource-efficient, but not always the best for top-tier accuracy — on stronger hardware consider models like `bge-m3`.
-- 🔁 Reranking improves result quality significantly; for low-resource setups, compact cross-encoder models are a pragmatic choice.
+- The `multilingual-e5-small` embedding model is fast and resource-efficient, but not always the best for top-tier accuracy - on stronger hardware consider models like `bge-m3`.
+- 🔁 Reranking improves result quality significantly; for low resource setups, compact cross-encoder models are a pragmatic choice.
 - 🚧 Production readiness is not complete: improvements such as robust prompt engineering, query normalization, and deployment hardening are left as next steps.
 
 📚 Key learnings
